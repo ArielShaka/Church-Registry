@@ -1,0 +1,19 @@
+#DB Configuration
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password:
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+  output:
+    ansi:
+      enabled: always
